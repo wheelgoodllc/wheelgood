@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Now | Wheel Good Bicycle Repair Co.</title>
+<meta name="description" content="Book your bike repair appointment online with Wheel Good Bicycle Repair Co. via Square Appointments.">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.png" alt="Wheel Good Bicycle Repair Co. logo" onerror="this.style.display='none'">
+      <span class="brand-text">WHEEL GOOD<span>BICYCLE REPAIR CO.</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">MENU</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="book.html" class="btn btn-primary">Book Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Book Your Repair</h1>
+    <p>Pick a service and a time that works for you. Booking and payment are handled securely through Square.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="booking-embed">
+      <!--
+        SETUP NOTE (remove this comment once configured):
+        1. In your Square Dashboard, go to Appointments > Booking Site > Share,
+           and copy your booking site URL. It looks like:
+           https://book.squareup.com/appointments/book/XXXXXXXX/LXXXXXXXXXXXXX
+        2. Replace SQUARE_BOOKING_URL below (in both the iframe src and the
+           fallback link's href) with that URL.
+        3. Some browsers block Square's booking page inside an iframe. If the
+           box below stays blank, delete the <iframe> and keep only the
+           "Open Booking Page" button — Square's own page will still work great
+           on its own tab.
+      -->
+      <iframe
+        src="SQUARE_BOOKING_URL"
+        title="Wheel Good Bicycle Repair Co. online booking"
+        loading="lazy">
+      </iframe>
+    </div>
+    <div class="text-center" style="margin-top:24px;">
+      <a href="SQUARE_BOOKING_URL" target="_blank" rel="noopener" class="btn btn-primary">Open Booking Page</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Before You Come In</h3>
+        <p>Walk-ins are always welcome, but booking ahead guarantees your spot. If your repair needs a special-order part, we may ask for a deposit through Square when you book.</p>
+      </div>
+      <div class="card">
+        <h3>What to Bring</h3>
+        <p>Just the bike. If you know of any specific noises, shifting issues, or damage, jot them down — it helps us diagnose faster.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Wheel Good Bicycle Repair Co.</h3>
+        <p>123 Main Street<br>Your City, ST 00000</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>(555) 123-4567<br><a href="mailto:hello@wheelgoodbikes.com">hello@wheelgoodbikes.com</a></p>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <ul class="social-links">
+          <li><a href="#">IG</a></li>
+          <li><a href="#">FB</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Wheel Good Bicycle Repair Co. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

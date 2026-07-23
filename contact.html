@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Wheel Good Bicycle Repair Co.</title>
+<meta name="description" content="Get in touch with Wheel Good Bicycle Repair Co. — address, hours, phone, and contact form.">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo.png" alt="Wheel Good Bicycle Repair Co. logo" onerror="this.style.display='none'">
+      <span class="brand-text">WHEEL GOOD<span>BICYCLE REPAIR CO.</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">MENU</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="book.html" class="btn btn-primary">Book Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Get In Touch</h1>
+    <p>Questions about a repair, a part, or your order? Reach out any way that works for you.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="grid grid-2">
+      <div>
+        <h2>Send a Message</h2>
+        <!--
+          SETUP NOTE (remove once configured):
+          This form needs a backend to actually deliver messages since this
+          is a static site. The easiest no-code option is Formspree
+          (https://formspree.io) — free tier available:
+            1. Create a form at formspree.io and copy your form endpoint.
+            2. Replace YOUR_FORM_ID below with your endpoint ID.
+          Until then, this form will not send anywhere.
+        -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+
+      <div>
+        <h2>Visit The Shop</h2>
+        <div class="card" style="margin-bottom:24px;">
+          <table class="info-table">
+            <tr><td>Address</td><td>123 Main Street<br>Your City, ST 00000</td></tr>
+            <tr><td>Phone</td><td>(555) 123-4567</td></tr>
+            <tr><td>Email</td><td><a href="mailto:hello@wheelgoodbikes.com">hello@wheelgoodbikes.com</a></td></tr>
+          </table>
+        </div>
+        <div class="card" style="margin-bottom:24px;">
+          <h3>Hours</h3>
+          <table class="info-table">
+            <tr><td>Mon – Fri</td><td>9:00am – 6:00pm</td></tr>
+            <tr><td>Saturday</td><td>10:00am – 4:00pm</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+        </div>
+
+        <!--
+          SETUP NOTE (remove once configured):
+          Replace the map below with your own embed:
+          Google Maps > search your address > Share > Embed a map > copy the
+          <iframe> src and paste it here. No API key needed for the basic embed.
+        -->
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps?q=Your+City,ST&output=embed"
+            title="Shop location map"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Wheel Good Bicycle Repair Co.</h3>
+        <p>123 Main Street<br>Your City, ST 00000</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>(555) 123-4567<br><a href="mailto:hello@wheelgoodbikes.com">hello@wheelgoodbikes.com</a></p>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <ul class="social-links">
+          <li><a href="#">IG</a></li>
+          <li><a href="#">FB</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Wheel Good Bicycle Repair Co. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
